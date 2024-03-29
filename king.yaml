@@ -1,0 +1,5 @@
+---
+- name: Taurus test
+  tasks:
+    name: run commands
+    command: "echo test script"
