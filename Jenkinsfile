@@ -1,5 +1,6 @@
 
 pipeline {
+
     agent any // This tells Jenkins to run this pipeline on any available agent
 
     environment {
@@ -49,6 +50,7 @@ pipeline {
                 // sh 'mvn test'
             }
         }
+    }
         
 
     post {
@@ -74,4 +76,4 @@ pipeline {
             echo 'Build status changed!'
         }
     }
-}
+    }
