@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         // Define environment variables here
-        MY_ENV_VAR = 'SomeValue'
+        MY_ENV_VAR = 'SomeValues'
     }
 
     stages {
