@@ -2,4 +2,4 @@
 - name: Taurus test
   tasks:
     name: run commands
-    command: 'echo "test scripts"'
+    command: 'echo "test scffripts"'
