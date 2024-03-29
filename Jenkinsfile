@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('SCA Test') {
             steps {
                 // Commands for testing the project
                 echo 'Testing...'
@@ -25,7 +25,31 @@ pipeline {
                 // sh 'mvn test'
             }
         }
-    }
+         stage('Trivy Test') {
+            steps {
+                // Commands for testing the project
+                echo 'Testing...'
+                // For example, you might run unit tests with Maven:
+                // sh 'mvn test'
+            }
+        }
+         stage('Docker Build & Push') {
+            steps {
+                // Commands for testing the project
+                echo 'Testing...'
+                // For example, you might run unit tests with Maven:
+                // sh 'mvn test'
+            }
+        }
+         stage('Deploy to Kubernetes') {
+            steps {
+                // Commands for testing the project
+                echo 'Testing...'
+                // For example, you might run unit tests with Maven:
+                // sh 'mvn test'
+            }
+        }
+        
 
     post {
         always {
